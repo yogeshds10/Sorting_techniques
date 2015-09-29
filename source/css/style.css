@@ -1,0 +1,177 @@
+
+@charset "ISO-8859-1";
+
+*{
+    box-sizing:border-box;
+}
+body {
+    font-family: arial;
+    margin: 0;
+}
+rect {
+    fill: #2EBBD1;
+}
+rect.rect1Color {
+    fill: #FF8000;
+}
+rect.rect2Color {
+    fill: #0040FF;
+}
+rect.rect3Color {
+    fill: #40FF00;
+}
+text{
+	font-size: 18px;
+}
+.topHeader {
+    background: none repeat scroll 0 0 #2a75ba;
+    box-shadow: 0 1px 3px #746f6f;
+    margin: 0 0 10px;
+    padding: 0 10px;
+}
+.heading {
+    color: #fff;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px 10px 5px 0;
+}
+.sortLink {
+    color: #c2c2c2;
+    display: inline-block;
+    padding: 10px 5px;
+    text-decoration: none;
+    outline: none;
+}
+.sortLink.selectedSort {
+    color: #ffffff;
+    font-weight: bold;
+}
+.playGroundDiv {
+    display: block;
+    text-align: center;
+}
+.bottomBar {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.inputValues {
+    border: 1px solid #737373;
+    box-shadow: 0 0 10px #9f9f9f inset;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 7px;
+    width: 500px;
+}
+#updateInputValues {
+    background: none repeat scroll 0 0 #FF8A27;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-family: arial;
+    font-weight: bold;
+    padding: 10px 10px 9px;
+}
+#updateInputValues:hover{
+    background: none repeat scroll 0 0 #A7D41E;
+}
+
+#startSorting{
+    float: right;
+    margin-top: 15px;
+}
+
+#startSorting {
+    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color:#ffec64;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+#startSorting:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+    background-color:#ffab23;
+}
+#startSorting:active {
+    position:relative;
+    top:1px;
+}
+
+#validationErrorMessage{
+    background: none repeat scroll 0 0 #fde4e1;
+    border: 1px solid #f2beb8;
+    color: #c90808;
+    display: none;
+    left: 50%;
+    margin-left: -300px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    width: 600px;
+}
+
+.topbarLinks {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+.topbarLinks > label {
+    display: inline-block;
+    padding: 25px 10px 14px;
+    cursor: pointer;
+}
+.topbarDataDiv{
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #aaa;
+    display: none;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 36px;
+    box-shadow: 0 2px 3px #AAA;
+}
+#valuesDiv {
+    width: 580px;
+}
+#explanationDiv {
+    width: 300px;
+    max-height: 400px;
+    overflow-y:auto;
+    color: #000;
+}
+#speedDiv{
+    width: 300px;
+}
+.explanationsContainer{
+    display: none;
+}
